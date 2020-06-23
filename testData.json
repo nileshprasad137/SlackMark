@@ -1,0 +1,14 @@
+{
+    "resource": "Resource path",
+    "path": "Path parameter",
+    "httpMethod": "Incoming request's method name",
+    "headers": {"Content-Type":"application/json"},
+    "multiValueHeaders": {"Content-Type":"application/json"},
+    "queryStringParameters": {},
+    "multiValueQueryStringParameters": {},
+    "pathParameters":  {},
+    "stageVariables": {},
+    "requestContext": {},
+    "body": "{\"whyThisInputBody\":\"Because this is the Input format of a Lambda function for proxy integration \",\"url\":\"https://leetcode.com/\"}",
+    "isBase64Encoded": false
+}

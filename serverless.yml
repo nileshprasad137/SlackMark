@@ -1,0 +1,17 @@
+service: slackmark-ls
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
+  environment:
+    WEBHOOK_URL: "CHANGE_ME_TO_YOURS_SLACK_CHANNEL_WEBHOOK"
+
+functions:
+  slackMarker:
+    handler: slackMarker.slackMark
+    events:
+      - http:
+          path: slackMarker
+          method: post
+          cors: true

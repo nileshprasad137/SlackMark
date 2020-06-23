@@ -1,0 +1,11 @@
+{
+  "name": "slackMarker",
+  "version": "1.0.0",
+  "description": "Serverless service which sends a message to Slack channel.",
+  "author": "Nilesh Prasad",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5"
+  }
+}
