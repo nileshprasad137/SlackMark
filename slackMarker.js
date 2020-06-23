@@ -73,7 +73,7 @@ try{
 };
 
 const sendToSlack = async (url) => {
-  const text = [`<${url}`].join('\n');
+  const text = [`<${url}>`].join('\n');
   var options = {
       method: 'POST',
       uri: WEBHOOK_URL,
