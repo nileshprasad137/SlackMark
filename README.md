@@ -20,6 +20,11 @@ This project uses:
   ```bash
   $ npm install -g serverless
   ```
+  After cloning, also install all dependencies listed at `package.json`
+  ```bash
+  $ npm install 
+  ```
+  
 2. Create an [incoming webhook integration](https://my.slack.com/services/new/incoming-webhook/) in Slack. Copy the webhook URL into `serverless.yml` as the `WEBHOOK_URL` environment variable.
 
 
