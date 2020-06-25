@@ -2,7 +2,7 @@ var config = {};
 
 config.allowedHostNames =  [
     'leetcode.com',
-    'youtube.com',
+    'www.youtube.com',
     'hackerrank.com',
     'medium.com',
     'stackoverflow.com',

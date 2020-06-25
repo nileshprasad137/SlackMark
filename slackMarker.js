@@ -16,7 +16,8 @@ try{
       const errorResponse = {
         isBase64Encoded : false,
         statusCode: 400,
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json' ,
+                'Access-Control-Allow-Origin': '*'},
         body: JSON.stringify({
           errorMessage: "URLs with this domain name are not allowed to be sent on slack. Contact Developer to allow it.",
           errorType: "BAD REQUEST",
@@ -44,7 +45,8 @@ try{
       const errorResponse = {
           isBase64Encoded : false,
           statusCode: 500,
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json' ,
+                'Access-Control-Allow-Origin': '*'},
           body: JSON.stringify({
             errorMessage: errorObj.message,
             errorType: errorObj.name,
@@ -61,7 +63,8 @@ try{
     const errorResponse = {
       isBase64Encoded : false,
       statusCode: 400,
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' ,
+                'Access-Control-Allow-Origin': '*'},
       body: JSON.stringify({
         errorMessage: err.message,
         errorType: "BAD REQUEST",
